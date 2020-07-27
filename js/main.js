@@ -6,4 +6,5 @@ $(function(){
 	$('.menu-btn').on('click', function(){
 		$('.menu-list').slideToggle();
 	});
+	new WOW().init();
 });

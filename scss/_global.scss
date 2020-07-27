@@ -1,0 +1,61 @@
+html{
+	box-sizing: border-box;
+}
+*,*::before,*::after{
+	box-sizing: inherit;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+ul,
+li{
+	list-style: none;
+	padding: 0;	
+	margin: 0;
+}
+body{
+	color: #fff;
+	@extend %roboto-regular;
+	background-color: #2F343A;
+}
+.container{
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.title{
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 49px;
+	position: relative;
+	padding-top: 40px;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 90px;
+		height: 6px;
+		background-color: $main;
+		top: 0;
+		left: 0;
+	}
+}
+.all-services{
+	text-transform: uppercase;
+	text-align: center;
+}
+.num{
+	color: #2F343A;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 75px;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.text{
+	font-size: 14px;
+	line-height: 16px;
+}
